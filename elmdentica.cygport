@@ -1,0 +1,17 @@
+NAME="elmdentica"
+VERSION=0.9.10.75634
+RELEASE=1
+CATEGORY="Web"
+SUMMARY="Enlightenment client for StatusNet (identi.ca)"
+DESCRIPTION="Elmdentica is a Free Software (and GPLv3 licensed) EFL-based client
+for ​StatusNet servers, like the most famous one, ​IdentiCa. This program is
+optimized for physically small touch screens."
+HOMEPAGE="http://www.enlightenment.org/"
+PATCH_URI="01-vpath.patch  02-cygwin.patch"
+SVN_URI="http://svn.enlightenment.org/svn/e"
+SVN_BRANCH="trunk/${NAME}"
+SVN_REV=${PV[4]}
+SVN_MODULE=${SVN_BRANCH##*/}
+inherit svn
+
+KEEP_LA_FILES="none"
